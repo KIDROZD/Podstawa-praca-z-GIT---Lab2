@@ -25,6 +25,13 @@ while [ $# -gt 0 ]; do
             fi
             exit 0
             ;;
+        --help)
+            echo "Poniżej opcje do wykorzystania skryptu:"
+            echo "--date - wyświetl dzisiejszą datę"
+            echo "--logs - stwórzy 100 plików log.txt"
+            echo "--logs [x] - [x] podaj liczbę plików log.txt do utworzenia"
+            exit 0
+            ;;
     esac
     shift
 done
